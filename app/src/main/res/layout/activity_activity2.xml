@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tio.jeremy.rockpaperscissor.Activity2"
+    android:id="@+id/bigcontainer">
+
+
+
+     <RelativeLayout android:orientation="horizontal"
+                  android:layout_height="100dp"
+                  android:layout_width="80dp"
+                  android:id="@+id/imagefram1"
+                  android:background="#FFff0000"
+                  >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView1" />
+
+     </RelativeLayout>
+
+
+     < RelativeLayout
+        android:orientation="horizontal"
+        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:id="@+id/imagefram2"
+        android:background="#FF00ff00"
+        android:layout_toRightOf="@id/imagefram1">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2" />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:orientation="horizontal"
+          android:layout_height="100dp"
+          android:layout_width="80dp"
+          android:id="@+id/imagefram3"
+          android:background="#FF0000ff"
+          android:layout_alignParentTop="true"
+          android:layout_toEndOf="@id/imagefram2">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3" />
+
+      </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+
+        android:text="Rock"
+        android:id="@+id/decisionText"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="40dp"
+     />
+
+    <TextView
+        android:layout_weight="0.2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="YOU WIN"
+        android:id="@+id/winlooseText"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
